@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salón de Belleza - Tus Cuidados Personalizados</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #ff69b4;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header img {
+            max-height: 50px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        nav {
+            background-color: #ffc0cb;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ff69b4;
+            color: white;
+        }
+        .container {
+            padding: 20px;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service-box {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 30%;
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        .service-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #ff69b4;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @media (max-width: 768px) {
+            .service-box {
+                width: 80%;
+            }
+        }
+        .appointment-form {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        .appointment-form input[type="text"],
+        .appointment-form input[type="email"],
+        .appointment-form select,
+        .appointment-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .appointment-form button {
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .appointment-form button:hover {
+            background-color: #ffc0cb;
+        }
+        .contact-options {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .contact-options a {
+            color: #ff69b4;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        .contact-options a:hover {
+            text-decoration: underline;
+        }
+        .location {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .location img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .staff {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .staff-member {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+        .staff-member img {
+            max-width: 100px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .hours {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://via.placeholder.com/50x50?text=Logo" alt="Logo">
+        <h1>Tus Cuidados Personalizados</h1>
+        <p>Salón de Belleza</p>
+    </header>
+    <nav>
+        <a href="#services">Servicios</a>
+        <a href="#about">Acerca de Nosotros</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+    <div class="container">
+        <section id="services">
+            <h2>Nuestros Servicios</h2>
+            <div class="services">
+                <div class="service-box">
+                    <img src="https://via.placeholder.com/150" alt="Maquillaje">
+                    <h3>Maquillaje</h3>
+                    <p>Diseños únicos y profesional.</p>
+                </div>
+                <div class="service-box">
+                    <img src="https://via.placeholder.com/150" alt="Manicura">
+                    <h3>Manicura y Pedicura</h3>
+                    <p>Manos y pies perfectos.</p>
+                </div>
+                <div class="service-box">
+                    <img src="https://via.placeholder.com/150" alt="Cejas">
+                    <h3>Cejas y Pestañas</h3>
+                    <p>Definición perfecta.</p>
+                </div>
+                <div class="service-box">
+                    <img src="https://via.placeholder.com/150" alt="Masajes">
+                    <h3>Masajes Corporales</h3>
+                    <p>Relajación total.</p>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h2>Acerca de Nosotros</h2>
+            <p>Bienvenidas a <strong>Tus Cuidados Personalizados</strong>, somos un salón de belleza dedicado a ofrecerte los mejores cuidados y tratamientos para ti. Nuestra misión es hacerte sentir hermosa y confiada.</p>
+            <p>Dueña: Alexandra Vargas</p>
+        </section>
+        <section id="staff" class="staff">
+            <h2>Nuestro Equipo</h2>
+            <div class="staff-member">
+                <img src="https://via.placeholder.com/100" alt="Gisela Moncada">
+                <h3>Gisela Moncada</h3>
+                <p>Maquillista</p>
+            </div>
+            <div class="staff-member">
+                <img src="https://via.placeholder.com/100" alt="Alexa Vargas">
+                <h3>Alexa Vargas</h3>
+                <p>Manicurista</p>
+            </div>
+            <div class="staff-member">
+                <img src="https://via.placeholder.com/100" alt="Lizeth Vargas">
+                <h3>Lizeth Vargas</h3>
+                <p>Pedicurista</p>
+            </div>
+            <div class="staff-member">
+                <img src="https://via.placeholder.com/100" alt="Melany">
+                <h3>Melany</h3>
+                <p>Estilista de Cejas y Pestañas</p>
+            </div>
+            <div class="staff-member">
+                <img src="https://via.placeholder.com/100" alt="Julieta">
+                <h3>Julieta</h3>
+                <p>Estilista de Cejas y Pestañas</p>
+            </div>
+            <div class="staff-member">
+                <img src="https://via.placeholder.com/100" alt="Marelin Henao">
+                <h3>Marelin Henao</h3>
+                <p>Masajista</p>
+            </div>
+        </section>
+        <section id="hours" class="hours">
+            <h2>Horario de Atención</h2>
+            <p>Atendemos de lunes a domingos, menos días festivos.</p>
+            <p><strong>Horario:</strong> 9:00 AM - 8:00 PM</p>
+            <p>También ofrecemos servicios de domicilios a todas las partes.</p>
+        </section>
+        <section id="appointment">
+            <h2>Solicita tu cita</h2>
+            <form class="appointment-form" id="appointmentForm">
+                <input type="text" id="name" placeholder="Nombre" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <select id="service" required>
+                    <option value="">Selecciona un servicio</option>
+                    <option value="maquillaje">Maquillaje</option>
+                    <option value="manicura">Manicura y Pedicura</option>
+                    <option value="cejas">Cejas y Pestañas</option>
+                    <option value="masajes">Masajes Corporales</option>
+                </select>
+                <textarea id="message" placeholder="Mensaje (opcional)"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="contact-options">
+                <a href="tel:+573246416158">Llámanos</a>
+                <a href="https://api.whatsapp.com/send?phone=573246416158&text=Hola,%20quiero%20solicitar%20una%20cita." target="_blank">Chatea con nosotros</a>
+            </div>
+        </section>
+        <section id="location" class="location">
+            <h2>Ubicación</h2>
+            <p>Nuestro salón está ubicado en:</p>
+            <p><strong>Andes Calle 15 al Sur</strong></p>
+            <img src="https://via.placeholder.com/400x200?text=Mapa" alt="Ubicación del Salón">
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2023 Tus Cuidados Personalizados</p>
+    </footer>
+    <script>
+        document.getElementById('appointmentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('¡Tu cita ha sido solicitada! Nos pondremos en contacto contigo.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
